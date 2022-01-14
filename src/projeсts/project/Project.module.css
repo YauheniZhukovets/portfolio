@@ -1,0 +1,36 @@
+.projectBlock {
+    border: 1px solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.image {
+   width: 250px;
+    height: 200px;
+    background-color: #f1f5e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.nameProject {
+    background-color: #cecece;
+    height: 70px;
+    padding: 10px;
+}
+
+.textarea {
+margin: 5px 5px 5px 0px;
+}
+
+.nameSpan {
+    background-color: #a8a8a8;
+}
