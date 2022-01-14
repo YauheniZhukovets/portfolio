@@ -1,7 +1,14 @@
 .header {
-    height: 80px;
-    background-color: #91d4b6;
+    padding: 0% 10%;
+    height: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #a2b7ae;
+
 }
+
+
+
+
+

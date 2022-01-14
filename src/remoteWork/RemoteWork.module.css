@@ -1,0 +1,21 @@
+.remoteWorkBlock {
+    min-height: 25vh;
+    background-color: #e7d5d5;
+}
+
+.remoteWorkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button {
+    font-weight: bolder;
+    padding: 10px;
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.title {
+    background-color: #cecece;
+}

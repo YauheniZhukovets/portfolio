@@ -1,0 +1,26 @@
+.footerBlock {
+    min-height: 40vh;
+    background-color: #d0c1ce;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    background-color: #cecece;
+}
+
+.bar {
+    border: 1px solid;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text {
+    background-color: #cecece;
+}

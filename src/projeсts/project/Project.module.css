@@ -8,7 +8,7 @@
 
 
 .image {
-   width: 250px;
+   width: 100%;
     height: 200px;
     background-color: #f1f5e8;
     display: flex;
@@ -17,14 +17,18 @@
 }
 
 .button {
+    padding: 10px;
     background-color: #a8a8a8;
     cursor: pointer;
 }
 
 .nameProject {
+    display: flex;
+    flex-direction: column;
     background-color: #cecece;
+    width: 100%;
     height: 70px;
-    padding: 10px;
+    padding:  10px 0;
 }
 
 .textarea {
