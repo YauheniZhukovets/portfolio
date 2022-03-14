@@ -3,7 +3,7 @@ import s from './FooterNav.module.css'
 
 export const FooterNav = () => {
     return (
-        <div className={s.item}>
+        <div className={s.socialIcon}>
         </div>
     );
 };

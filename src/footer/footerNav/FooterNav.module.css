@@ -1,6 +1,6 @@
-.item {
-    height: 26px;
-    width: 26px;
+.socialIcon {
+    height: 50px;
+    width: 50px;
     background-color: #a1a0a0;
     cursor: pointer;
 }

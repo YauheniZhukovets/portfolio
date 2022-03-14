@@ -3,18 +3,17 @@ import s from '../project/Project.module.css'
 
 type ProjectPropsType = {
     name: string
+    description: string
 }
 
 export const Project = (props:ProjectPropsType) => {
     return (
-        <div className={s.projectBlock}>
+        <div className={s.project}>
             <div className={s.image}>
-                <div className={s.button}>Смотреть</div>
+                <a href={'/*'} className={s.viewBtn} >Смотреть</a>
             </div>
-            <div className={s.nameProject}>
-                <span className={s.nameSpan}>{props.name}</span>
-                <textarea className={s.textarea} placeholder={"Крaткое описание"} value={''}> </textarea>
-            </div>
+                <h3>{props.name}</h3>
+                <span className={s.description} > {props.description} </span>
         </div>
     );
 };

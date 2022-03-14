@@ -1,26 +1,19 @@
-.footerBlock {
-    min-height: 40vh;
+.footer {
     background-color: #d0c1ce;
 }
 
 .footerContainer {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .title {
     background-color: #cecece;
 }
 
-.bar {
-    border: 1px solid;
-    width: 40%;
+.socialIcons {
+    width: 250px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.text {
-    background-color: #cecece;
 }

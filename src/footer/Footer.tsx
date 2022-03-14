@@ -5,16 +5,16 @@ import {FooterNav} from "./footerNav/FooterNav";
 
 export const Footer = () => {
     return (
-        <div className={s.footerBlock}>
+        <div className={s.footer}>
             <div className={`${s.footerContainer} ${sContainer.container}`}>
                 <h3 className={s.title}>Evgeni Zhukovets</h3>
-                <div className={s.bar}>
+                <div className={s.socialIcons}>
                     <FooterNav/>
                     <FooterNav/>
                     <FooterNav/>
                     <FooterNav/>
                 </div>
-                <h3 className={s.text}>2022 Все права защищены</h3>
+                <span className={s.copyright}>2022 Все права защищены</span>
             </div>
         </div>
     );

@@ -1,40 +1,20 @@
-.projectBlock {
-    border: 1px solid;
-    width: 250px;
+.project {
+    width: 450px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 
 .image {
-   width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: #f1f5e8;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button {
-    padding: 10px;
+.viewBtn {
+    padding: 10px 20px;
     background-color: #a8a8a8;
     cursor: pointer;
-}
-
-.nameProject {
-    display: flex;
-    flex-direction: column;
-    background-color: #cecece;
-    width: 100%;
-    height: 70px;
-    padding:  10px 0;
-}
-
-.textarea {
-margin: 5px 5px 5px 0;
-}
-
-.nameSpan {
-    background-color: #a8a8a8;
 }
