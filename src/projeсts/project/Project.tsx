@@ -1,7 +1,11 @@
 import React from 'react';
 import s from '../project/Project.module.css'
 
-export const Project = (props) => {
+type ProjectPropsType = {
+    name: string
+}
+
+export const Project = (props:ProjectPropsType) => {
     return (
         <div className={s.projectBlock}>
             <div className={s.image}>
