@@ -1,5 +1,6 @@
 .projectsBlock {
-    background-color: #d5f6f6;
+    background-color: #1f1f20;
+    padding: 100px 0;
 }
 
 .projectsContainer {
@@ -10,7 +11,18 @@
 }
 
 .title {
-    background-color: #bdbdbd;
+    margin: 0 0 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-size: 36px;
+}
+
+.title h2 {
+    margin: 0;
+    font-weight: 300;
 }
 
 .projects {
@@ -26,4 +38,3 @@
         justify-content: center;
     }
 }
-
