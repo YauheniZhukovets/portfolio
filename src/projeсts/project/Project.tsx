@@ -4,12 +4,15 @@ import s from '../project/Project.module.css'
 type ProjectPropsType = {
     name: string
     description: string
+    style: {
+        backgroundImage:string
+    }
 }
 
 export const Project = (props: ProjectPropsType) => {
     return (
         <div className={s.project}>
-            <div className={s.image}>
+            <div className={s.image} style={props.style}>
                 <a href={'/*'} className={s.viewBtn}>Смотреть</a>
             </div>
             <div className={s.projectInfo}>
