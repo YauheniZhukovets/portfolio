@@ -6,14 +6,16 @@ type ProjectPropsType = {
     description: string
 }
 
-export const Project = (props:ProjectPropsType) => {
+export const Project = (props: ProjectPropsType) => {
     return (
         <div className={s.project}>
             <div className={s.image}>
-                <a href={'/*'} className={s.viewBtn} >Смотреть</a>
+                <a href={'/*'} className={s.viewBtn}>Смотреть</a>
             </div>
-                <h3>{props.name}</h3>
-                <span className={s.description} > {props.description} </span>
+            <div className={s.projectInfo}>
+                <div className={s.projectTitle}>{props.name}</div>
+                <span className={s.description}> {props.description} </span>
+            </div>
         </div>
     );
 };

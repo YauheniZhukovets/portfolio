@@ -7,7 +7,6 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-
 }
 
 .title {
@@ -15,14 +14,22 @@
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     text-transform: capitalize;
-    line-height: 1.2;
     letter-spacing: 5px;
     font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    position: relative;
 }
 
-.title h2 {
-    margin: 0;
-    font-weight: 300;
+.title::before {
+    content: '';
+    background: #4e93e6;
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%,50%);
 }
 
 .projects {
@@ -30,7 +37,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 1124px) {

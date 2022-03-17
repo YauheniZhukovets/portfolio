@@ -2,14 +2,17 @@ import React from 'react';
 import s from './Projects.module.css'
 import {Project} from './project/Project';
 import sContainer from '../common/styles/Container.module.css'
+import {Title} from '../common/components/title/Title';
 
 export const Projects = () => {
+   /* const social = {
+        backgroundImage: 'url(' + imgUrl + ')',
+    };*/
+
     return (
         <div className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
-                <div className={s.title}>
-                    <h2>Projects</h2>
-                </div>
+               <Title name={'Projects'} />
                 <div className={s.projects}>
                     <Project
                         name={'ToDoList'}

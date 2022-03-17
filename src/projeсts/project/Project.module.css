@@ -2,8 +2,8 @@
     width: 450px;
     display: flex;
     flex-direction: column;
+    background-color: #252527;
 }
-
 
 .image {
     height: 300px;
@@ -17,4 +17,25 @@
     padding: 10px 20px;
     background-color: #a8a8a8;
     cursor: pointer;
+}
+
+.projectInfo {
+    padding: 25px 20px;
+}
+
+.projectTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
 }
