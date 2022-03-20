@@ -1,0 +1,41 @@
+
+.skill {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #20341d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #d0cca6;
+  }
+
+  .skillInfo {
+    padding-top: 30px;
+    text-align: center;
+
+    .skillTitle {
+      text-transform: uppercase;
+      margin: 0 0 15px;
+      padding: 0;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .skillDescription {
+
+    }
+  }
+}
+
+
+

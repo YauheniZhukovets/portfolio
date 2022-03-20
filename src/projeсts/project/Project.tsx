@@ -17,7 +17,7 @@ export const Project = (props: ProjectPropsType) => {
             </div>
             <div className={s.projectInfo}>
                 <div className={s.projectTitle}>{props.name}</div>
-                <span className={s.description}> {props.description} </span>
+                <span className={s.projectDescription}> {props.description} </span>
             </div>
         </div>
     );

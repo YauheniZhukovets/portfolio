@@ -1,25 +1,30 @@
 @import '../common/styles/scss/variables';
 
-.projectsBlock {
-  background-color: $bgColor;
+.skillsBlock {
+  background-color: $bgSecondColor;
   padding: 100px 0;
 
-  .projectsContainer {
+  .skillsContainer {
+    max-width: 1140px;
     flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: space-between;
 
-    .projects {
+    .skills {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
-      margin-top: 30px;
+      margin: 30px -15px 0;
 
-      @media screen and (max-width: 1124px) {
+      @media screen and (max-width: 887px) {
         justify-content: center;
       }
     }
   }
 }
+
+
+
+
+

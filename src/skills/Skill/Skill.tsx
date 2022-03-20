@@ -1,4 +1,4 @@
-import s from './Skill.module.css'
+import s from './Skill.module.scss'
 
 type SkillPropsType = {
     title: string
@@ -9,8 +9,10 @@ export const Skill = (props: SkillPropsType) => {
     return (
         <div className={s.skill}>
             <div className={s.icon}> </div>
-            <h3>{props.title}</h3>
-            <span>{props.description}</span>
+            <div className={s.skillInfo}>
+                <div className={s.skillTitle}>{props.title}</div>
+                <span className={s.skillDescription}>{props.description}</span>
+            </div>
         </div>
     );
 };
