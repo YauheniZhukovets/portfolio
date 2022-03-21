@@ -1,18 +1,21 @@
+@import '../../common/styles/scss/variables';
+@import "../../common/styles/scss/mixins";
 
 .skill {
   max-width: 340px;
   margin: 0 auto;
   padding: 40px 0;
-  background-color: #20341d;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 
   .icon {
-    width: 50px;
-    height: 50px;
-    background-color: #d0cca6;
+    width: 80px;
+    margin: 0 auto 30px;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 80px;
+    text-align: center;
+    transform: rotate(45deg);
+    font-size: 40px;
   }
 
   .skillInfo {
@@ -20,19 +23,15 @@
     text-align: center;
 
     .skillTitle {
+      @include text($titleFontFamily, 16px, 1.2, 700);
       text-transform: uppercase;
-      margin: 0 0 15px;
-      padding: 0;
-      font-size: 16px;
       letter-spacing: 1px;
-      font-family: "Josefin Sans", sans-serif;
-      font-weight: 700;
-      line-height: 1.2;
-      color: #fff;
+      margin: 0 0 15px;
     }
 
     .skillDescription {
-
+      @include text($textFontFamily, 12px, 1.8, 400);
+      text-align: center;
     }
   }
 }

@@ -1,0 +1,66 @@
+@import '../common/styles/scss/variables';
+
+.mainBlock {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    .text {
+      color: #fff;
+      width: 50%;
+
+      .myGreeting {
+        font-family: Poppins, sans-serif;
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .fullName {
+        font-family: "Josefin Sans", sans-serif;
+        line-height: 1.2;
+        font-weight: 600;
+        font-size: 50px;
+        padding: 10px 0 10px;
+        letter-spacing: 5px;
+
+        .name {
+          display: inline-block;
+        }
+      }
+
+      .myProfession {
+        font-family: Poppins, sans-serif;
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 27px;
+        margin: 0;
+      }
+    }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    @media screen and (max-width: 765px) {
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
+

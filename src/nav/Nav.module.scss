@@ -1,0 +1,16 @@
+@import './../common/styles/scss/variables';
+@import "./../common/styles/scss/mixins";
+
+.nav {
+    @include text($titleFontFamily, 16px, 1.2, 700);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+
+    .navLink{
+        color: $textColor;
+        text-decoration: none;
+    }
+}
