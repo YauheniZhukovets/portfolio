@@ -7,3 +7,9 @@
   font-weight: $font-weight;
   color: $textColor;
 }
+
+@mixin background ($background-size, $background-position, $background-repeat) {
+  background-size: $background-size;
+  background-position: $background-position;
+  background-repeat: $background-repeat
+}

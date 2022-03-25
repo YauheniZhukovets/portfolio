@@ -1,6 +1,7 @@
 @import '../../styles/scss/variables';
 
 .title {
+  text-align: center;
   margin: 0 0 30px;
   font-family: 'Josefin Sans', sans-serif;
   color: $textColor;
@@ -21,7 +22,5 @@
     left: 50%;
     transform: translate(-50%, 50%);
   }
-
-
 }
 

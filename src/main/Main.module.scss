@@ -1,4 +1,5 @@
 @import '../common/styles/scss/variables';
+@import "../common/styles/scss/mixins";
 
 .mainBlock {
   display: flex;
@@ -8,26 +9,25 @@
 
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 15px 0;
+    margin: 0 auto 0;
     align-items: center;
     align-content: center;
 
     .text {
       color: #fff;
-      width: 50%;
+      width: 500px;
+      @media screen and (max-width: 630px) {
+        width: 300px;
+      }
 
       .myGreeting {
-        font-family: Poppins, sans-serif;
-        line-height: 1.8;
-        font-weight: 400;
-        font-size: 16px;
+        @include text($textFontFamily, 16px, 1.8, 400);
       }
 
       .fullName {
-        font-family: "Josefin Sans", sans-serif;
-        line-height: 1.2;
-        font-weight: 600;
-        font-size: 50px;
+        @include text($titleFontFamily, 50px, 1.2, 600);
         padding: 10px 0 10px;
         letter-spacing: 5px;
 
@@ -37,10 +37,7 @@
       }
 
       .myProfession {
-        font-family: Poppins, sans-serif;
-        line-height: 1.8;
-        font-weight: 400;
-        font-size: 27px;
+        @include text($textFontFamily, 27px, 1.8, 400);
         margin: 0;
       }
     }
@@ -48,13 +45,10 @@
     .photo {
       width: 300px;
       height: 400px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
+      @include background(cover, center, no-repeat);
     }
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 1020px) {
       justify-content: center;
     }
   }

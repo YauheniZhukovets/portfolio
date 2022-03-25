@@ -1,12 +1,13 @@
 import React from 'react';
-import s from './Hire.module.css'
+import s from './Hire.module.scss'
 import sContainer from "../common/styles/Container.module.css";
+import {Title} from '../common/components/title/Title';
 
 export const Hire = () => {
     return (
         <div className={s.hireBlock}>
             <div className={`${sContainer.container} ${s.hireContainer} `}>
-                    <h2 className={s.title}>I Am Considering Options For Remote Work</h2>
+                <Title name={'I Am Considering Options For Remote Work'}/>
                     <a href={'/*'} className={s.hireBtn}>EMPLOY</a>
             </div>
         </div>

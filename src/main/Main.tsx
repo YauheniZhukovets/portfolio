@@ -16,7 +16,6 @@ export const Main = () => {
                 </div>
                 <div className={s.photo} style={{backgroundImage:`url(${photo})`}}> </div>
             </div>
-
         </div>
     );
 };
