@@ -1,6 +1,7 @@
 .socialIcon {
-    height: 50px;
-    width: 50px;
-    background-color: #a1a0a0;
+    line-height: 30px;
+    width: 30px;
+    font-size: 30px;
     cursor: pointer;
+    text-align: center;
 }

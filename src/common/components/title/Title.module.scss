@@ -1,16 +1,13 @@
 @import '../../styles/scss/variables';
+@import "../../styles/scss/mixins";
 
 .title {
   text-align: center;
   margin: 0 0 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  color: $textColor;
   text-transform: capitalize;
   letter-spacing: 5px;
-  font-size: 36px;
-  line-height: 1.2;
-  font-weight: 400;
   position: relative;
+  @include text($titleFontFamily, 36px, 1.2, 400);
 
   &::before {
     content: '';

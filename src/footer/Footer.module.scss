@@ -1,0 +1,41 @@
+@import '../common/styles/scss/variables';
+@import "../common/styles/scss/mixins";
+
+.footer {
+    background-color: $bgSecondColor;
+    padding: 40px 0;
+
+    .footerContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .title {
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            display: block;
+            cursor: pointer;
+            @include text($titleFontFamily, 24px, 1.2, 600);
+        }
+
+        .socialIcons {
+            width: 250px;
+            margin: 0 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .copyright {
+            margin: 0;
+            color: rgba(255, 255, 255, .5);
+            font-family: Poppins, sans-serif;
+            line-height: 1.8;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+

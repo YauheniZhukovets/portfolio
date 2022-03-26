@@ -1,20 +1,18 @@
 @import '../common/styles/scss/variables';
 
 .hireBlock {
-    background-color: $bgSecondColor;
-    padding: 100px 0;
+  background-color: $bgSecondColor;
+  padding: 100px 0;
 
-    .hireContainer {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .hireContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .hireBtn {
-        margin: 30px 0 0;
-        text-decoration: none;
-        padding: 10px 20px;
-        background-color: $primaryColor;
-        color: $textColor;
-    }
+  .hireBtn {
+    display: flex;
+    margin: 15px 0 0;
+    width: 100%;
+  }
 
 }

@@ -1,0 +1,31 @@
+@import '../../styles/scss/variables';
+@import "../../styles/scss/mixins";
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+  margin: 15px auto;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  position: relative;
+  max-width: 170px;
+  border: none;
+  z-index: 1;
+  @include text($textFontFamily, 14px, 1.2, 400);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background: $primaryColor;
+    z-index: -1;
+    margin: 0 auto;
+  }
+}
+
