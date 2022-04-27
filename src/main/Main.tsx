@@ -2,10 +2,14 @@ import React from 'react';
 import s from './Main.module.scss'
 import sContainer from '../common/styles/Container.module.css'
 import photo from '../assets/image/avatar.jpg'
+import {ParticleBackground} from '../common/ParticleBgr';
+
 
 export const Main = () => {
+
     return (
         <div className={s.mainBlock}>
+            <ParticleBackground/>
             <div className={`${sContainer.container} ${s.container}`}>
                 <div className={s.text}>
                     <div className={s.myGreeting}>Hi There</div>
@@ -14,7 +18,7 @@ export const Main = () => {
                     </div>
                     <div className={s.myProfession}>Frontend Developer</div>
                 </div>
-                <div className={s.photo} style={{backgroundImage:`url(${photo})`}}> </div>
+                <div className={s.photo} style={{backgroundImage: `url(${photo})`}}></div>
             </div>
         </div>
     );
