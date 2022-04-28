@@ -1,13 +1,13 @@
 @import '../common/styles/scss/variables';
+@import '../common/styles/scss/mixins';
 
 .projectsBlock {
   background-color: $bgColor;
   padding: 100px 0;
 
   .projectsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
 
     .projects {
       width: 100%;

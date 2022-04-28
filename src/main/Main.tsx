@@ -1,26 +1,32 @@
 import React from 'react';
 import s from './Main.module.scss'
-import sContainer from '../common/styles/Container.module.css'
 import photo from '../assets/image/avatar.jpg'
-import {ParticleBackground} from '../common/ParticleBgr';
+import ReactTypingEffect from 'react-typing-effect';
+
+
+const Fade = require('react-reveal/Fade')
+
 
 
 export const Main = () => {
-
     return (
+
         <div className={s.mainBlock}>
-            <ParticleBackground/>
-            <div className={`${sContainer.container} ${s.container}`}>
-                <div className={s.text}>
-                    <div className={s.myGreeting}>Hi There</div>
-                    <div className={s.fullName}>
-                        I am <span className={s.name}> Evgeni Zhukovets</span>
+            <div className={s.container}>
+                <Fade>
+                    <div className={s.text}>
+                        <div className={s.myGreeting}>Hi There</div>
+                        <div className={s.fullName}>
+                            I am <span className={s.name}> Evgeni Zhukovets</span>
+                        </div>
+                        <ReactTypingEffect className={s.myProfession} text={'Frontend Developer'}/>
                     </div>
-                    <div className={s.myProfession}>Frontend Developer</div>
-                </div>
-                <div className={s.photo} style={{backgroundImage: `url(${photo})`}}></div>
+                    <div className={s.photo} style={{backgroundImage: `url(${photo})`}}></div>
+                </Fade>
             </div>
         </div>
+
+
     );
 };
 

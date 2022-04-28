@@ -1,11 +1,11 @@
 @import './../common/styles/scss/variables';
+@import './../common/styles/scss/mixins';
 
 .header {
+    @include flex(row, flex-end, center, wrap);
+
     padding: 0 10%;
     height: 60px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background-color: $bgSecondColor;
 }
 

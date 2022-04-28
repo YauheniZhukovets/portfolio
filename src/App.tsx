@@ -8,6 +8,7 @@ import {Projects} from './projeсts/Projects';
 import {Main} from './main/Main';
 import {Hire} from './hire/Hire';
 
+
 function App() {
   return (
     <div className="App">

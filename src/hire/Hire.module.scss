@@ -1,12 +1,13 @@
 @import '../common/styles/scss/variables';
+@import "../common/styles/scss/mixins";
 
 .hireBlock {
   background-color: $bgSecondColor;
   padding: 100px 0;
 
   .hireContainer {
-    flex-direction: column;
-    justify-content: center;
+    @include container();
+    @include flex(column, center, center, wrap);
   }
 
   .hireBtn {

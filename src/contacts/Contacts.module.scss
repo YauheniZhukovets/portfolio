@@ -6,8 +6,8 @@
   padding: 100px 0;
 
   .contactsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+    @include container();
+    @include flex(column, flex-start, center, wrap);
 
     .contactForm {
       margin-top: 30px;

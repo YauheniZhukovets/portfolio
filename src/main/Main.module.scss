@@ -7,21 +7,11 @@
   min-height: 100vh;
   background-color: $bgColor;
 
-/*.particle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0.4;
-}*/
   .container {
-    display: flex;
-    justify-content: space-around;
+    @include container();
+    @include flex(row, space-around, center, wrap);
     padding: 0 15px 0;
     margin: 0 auto 0;
-    align-items: center;
-    align-content: center;
 
     .text {
       color: #fff;
