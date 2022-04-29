@@ -3,7 +3,10 @@
 
 .header {
     @include flex(row, flex-end, center, wrap);
-
+    width: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 1;
     padding: 0 10%;
     height: 60px;
     background-color: $bgSecondColor;

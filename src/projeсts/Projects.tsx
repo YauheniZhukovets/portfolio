@@ -12,7 +12,7 @@ export const Projects = () => {
     const todolist = {backgroundImage: `url(${todolistImage})`}
 
     return (
-        <div className={s.projectsBlock}>
+        <div id={'projects'} className={s.projectsBlock}>
             <div className={s.projectsContainer}>
                 <Title name={'Projects'}/>
                 <Fade bottom>

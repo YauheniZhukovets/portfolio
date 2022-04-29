@@ -2,16 +2,14 @@ import React from 'react';
 import s from './Main.module.scss'
 import photo from '../assets/image/avatar.jpg'
 import ReactTypingEffect from 'react-typing-effect';
-
+import Tilt from 'react-parallax-tilt';
 
 const Fade = require('react-reveal/Fade')
-
-
 
 export const Main = () => {
     return (
 
-        <div className={s.mainBlock}>
+        <div id={'home'} className={s.mainBlock}>
             <div className={s.container}>
                 <Fade>
                     <div className={s.text}>
@@ -21,7 +19,9 @@ export const Main = () => {
                         </div>
                         <ReactTypingEffect className={s.myProfession} text={'Frontend Developer'}/>
                     </div>
-                    <div className={s.photo} style={{backgroundImage: `url(${photo})`}}></div>
+                    <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
+                        <div className={s.photo} style={{backgroundImage: `url(${photo})`}}></div>
+                    </Tilt>
                 </Fade>
             </div>
         </div>

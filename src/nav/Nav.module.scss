@@ -2,15 +2,27 @@
 @import "./../common/styles/scss/mixins";
 
 .nav {
-    @include text($titleFontFamily, 16px, 1.2, 700);
+  text-transform: uppercase;
+  background-color: $bgSecondColor;
+  letter-spacing: 1px;
+  width: 420px;
+
+  .navContainer {
+    @include container();
     @include flex(row, space-between, center, wrap);
+  }
 
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 320px;
-
-    .navLink{
-        color: $textColor;
-        text-decoration: none;
+  a {
+    @include text($titleFontFamily, 16px, 1.2, 700);
+    color: $textColor;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: $primaryColor;
     }
+  }
+
+  .active {
+    color: $primaryColor;
+  }
 }

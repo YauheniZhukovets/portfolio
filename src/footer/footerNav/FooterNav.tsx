@@ -1,15 +1,16 @@
 import React from 'react';
-import s from './FooterNav.module.css'
+import s from './FooterNav.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {IconProp} from '@fortawesome/fontawesome-svg-core';
 
 type FooterPropsType = {
-    icon: any
+    icon: IconProp
 }
 
-export const FooterNav = (props: FooterPropsType) => {
+export const FooterNav = ({icon}: FooterPropsType) => {
     return (
         <div className={s.socialIcon}>
-            <FontAwesomeIcon icon={props.icon} style={{color: '#4e93e6'}}/>
+            <FontAwesomeIcon icon={icon} className={s.icon}/>
         </div>
     );
 };

@@ -1,0 +1,22 @@
+@import './../../common/styles/scss/variables';
+
+.socialIcon {
+  line-height: 30px;
+  width: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+
+  .icon {
+    color: $primaryColor;
+
+    &:hover {
+      color: $textColor;
+    }
+
+    &:active {
+      color: $bgColor;
+    }
+  }
+
+}

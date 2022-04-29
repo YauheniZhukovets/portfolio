@@ -1,13 +1,12 @@
 import React from 'react';
 import s from './Contacts.module.scss'
 import {Title} from '../common/components/title/Title';
-import {Button} from '../common/components/button/Button';
 
 const Fade = require('react-reveal/Fade')
 
 export const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div id={'contacts'} className={s.contactsBlock}>
             <div className={s.contactsContainer}>
                 <Title name={'Contact'}/>
                 <Fade bottom>
@@ -18,7 +17,7 @@ export const Contacts = () => {
                                   rows={7}
                                   placeholder={'Describe yourself here...'}>
                     </textarea>
-                        <Button name={'Send message'} type={'submit'}/>
+                        <button type={'submit'}>{'Send message'}</button>
                     </form>
                 </Fade>
             </div>

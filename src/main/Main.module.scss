@@ -43,7 +43,20 @@
     .photo {
       width: 345px;
       height: 430px;
+      background-position: 80% 0 ;
       @include background(cover, center, no-repeat);
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 110%;
+        width: 105%;
+        border: 5px solid $primaryColor;
+        left: 15px;
+        top: -15px;
+        z-index: -1;
+
+      }
     }
 
     @media screen and (max-width: 1020px) {
