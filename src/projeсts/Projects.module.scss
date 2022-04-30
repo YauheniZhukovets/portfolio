@@ -2,8 +2,7 @@
 @import '../common/styles/scss/mixins';
 
 .projectsBlock {
-  background-color: $bgColor;
-  padding: 100px 0;
+  padding: 120px 0;
 
   .projectsContainer {
     @include container();

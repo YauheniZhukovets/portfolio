@@ -2,8 +2,10 @@ import React from 'react';
 import s from './Nav.module.scss'
 import {Link} from 'react-scroll';
 
+const items:Array<string> = ['home', 'skills', 'projects', 'contacts']
+
 export const Nav = () => {
-    const items = ['home', 'skills', 'projects', 'contacts']
+
     return (
         <div className={s.nav}>
             <div className={s.navContainer}>
@@ -14,7 +16,7 @@ export const Nav = () => {
                                   activeClass={s.active}
                                   spy={true}
                                   smooth={true}
-                                  offset={0}
+                                  offset={-60}
                                   duration={500}
                             >
                                 {item}

@@ -1,0 +1,33 @@
+@import '../../common/styles/scss/variables';
+@import "../../common/styles/scss/mixins";
+
+.nav {
+  text-transform: uppercase;
+  background-color: $bgSecondColor;
+  letter-spacing: 1px;
+  width: 420px;
+  padding-right: 10%;
+
+  .navContainer {
+    @include container();
+    @include flex(row, space-between, center, wrap);
+
+    a {
+      @include text($titleFontFamily, 16px, 1.2, 700);
+      color: $textColor;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+
+    .active {
+      color: $primaryColor;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    display: none;
+  }
+}

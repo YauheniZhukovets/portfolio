@@ -6,10 +6,11 @@
     width: 100%;
     position: fixed;
     right: 0;
-    z-index: 1;
-    padding: 0 10%;
-    height: 60px;
-    background-color: $bgSecondColor;
+    left: 0;
+    z-index: 999;
+    height: 62px;
+    opacity: 0.9;
+
 }
 
 

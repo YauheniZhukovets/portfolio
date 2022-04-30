@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {Header} from './header/Header';
 import {Contacts} from './contacts/Contacts';
 import {Skills} from './skills/Skills';
