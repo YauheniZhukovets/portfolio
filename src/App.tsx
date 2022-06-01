@@ -6,20 +6,19 @@ import {Skills} from './skills/Skills';
 import {Footer} from './footer/Footer';
 import {Projects} from './projeсts/Projects';
 import {Main} from './main/Main';
-import {Hire} from './hire/Hire';
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Main/>
-      <Skills/>
-      <Projects/>
-      <Hire/>
-      <Contacts/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            {/*<Hire/>*/}
+            <Contacts/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

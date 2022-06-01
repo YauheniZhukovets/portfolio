@@ -15,14 +15,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
 
       .formGroupInput {
         @include text($textFontFamily, 12px, 1.8, 400);
         padding: 6px 12px;
-        margin-bottom: 1rem;
+        margin-bottom: 18px;
         width: 100%;
         background: $bgSecondColor;
         border: 1px solid #4a4a4a;
+
         &:focus {
           background: $bgColor;
         }
@@ -34,15 +36,38 @@
         width: 100%;
         background: $bgSecondColor;
         border: 1px solid #4a4a4a;
+
         &:focus {
           background: $bgColor;
         }
+      }
+
+      .errorsName {
+        position: absolute;
+        left: 0;
+        top: 33px;
+        color: $primaryColor;
+      }
+
+      .errorsContacts {
+        position: absolute;
+        left: 0;
+        top: 86.5px;
+        color: $primaryColor;
+      }
+
+      .errorsMessage {
+        position: absolute;
+        left: 0;
+        top: 288px;
+        color: $primaryColor;
       }
 
       @media screen and (max-width: 880px) {
         width: 85%;
       }
     }
+
     button[type='submit'] {
       @extend .btn;
       background-color: transparent;
