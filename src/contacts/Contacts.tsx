@@ -80,8 +80,9 @@ export const Contacts = () => {
                 </Fade>
                 {isShownModal &&
                     <Modal closeModal={closeModal}>
-                        <p>Your message has been sent</p>
-                    </Modal>}
+                        <p>Your message has been sent.</p>
+                    </Modal>
+                }
             </div>
         </div>
     );
