@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import s from './Contacts.module.scss'
 import {Title} from '../common/components/title/Title';
 import {useFormik} from 'formik';
-import {AxiosError} from 'axios';
 import {portfolioAPI} from '../common/api/portfolio-api';
 import {Modal} from '../common/modal/Modal';
+import {Loading} from '../common/preloder/Loading';
 
 const Fade = require('react-reveal/Fade')
 
@@ -15,9 +15,17 @@ export type FormikType = {
 }
 
 export const Contacts = () => {
+    const [status, setStatus] = useState<'idle' | 'loading' | 'succeeded' | 'failed'>('idle')
     const [isShownModal, setIsShownModal] = useState<boolean>(false)
-    const closeModal = () => setIsShownModal(false)
-    const showModal = () => setIsShownModal(true)
+    const [error, setError] = useState<string | null>(null)
+
+    const closeModal = () => {
+        setIsShownModal(false)
+        setStatus('idle')
+    }
+    const showModal = () => {
+        setIsShownModal(true)
+    }
 
     const formik = useFormik({
         validate: (values) => {
@@ -36,16 +44,20 @@ export const Contacts = () => {
             contacts: '',
             message: ''
         },
-        onSubmit: async (values: FormikType, {resetForm}) => {
-            const res = await portfolioAPI.sendMessage(values)
-            try {
-                showModal()
-                resetForm()
-                console.log(res.data.data);
-            } catch (err) {
-                let error = err as AxiosError;
-                console.log(error);
-            }
+        onSubmit: (values: FormikType, {resetForm}) => {
+            setStatus('loading')
+            showModal()
+            portfolioAPI.sendMessage(values)
+                .then(() => {
+                    setStatus('succeeded')
+                    showModal()
+                    resetForm()
+                })
+                .catch((err) => {
+                    setStatus('failed')
+                    setError(err.message)
+                    showModal()
+                })
         }
     })
     return (
@@ -67,7 +79,6 @@ export const Contacts = () => {
                         />
                         {formik.touched.contacts ?
                             <div className={s.errorsContacts}>{formik.errors.contacts}</div> : null}
-
                         <textarea className={s.formGroupTextarea}
                                   rows={7}
                                   placeholder={'Describe yourself here...'}
@@ -78,9 +89,19 @@ export const Contacts = () => {
                         <button type={'submit'}>{'Send message'}</button>
                     </form>
                 </Fade>
-                {isShownModal &&
+                {status === 'loading' && isShownModal &&
+                    <Modal closeModal={closeModal}>
+                        <Loading/>
+                    </Modal>
+                }
+                {status === 'succeeded' && isShownModal &&
                     <Modal closeModal={closeModal}>
                         <p>Your message has been sent.</p>
+                    </Modal>
+                }
+                {status === 'failed' && isShownModal &&
+                    <Modal closeModal={closeModal}>
+                        <p>{error}</p>
                     </Modal>
                 }
             </div>
