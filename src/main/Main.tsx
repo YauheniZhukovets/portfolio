@@ -5,7 +5,6 @@ import bgImage from '../assets/image/bgImage.jpg'
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 import {Parallax} from 'react-parallax';
-
 const Fade = require('react-reveal/Fade')
 
 export const Main = () => {

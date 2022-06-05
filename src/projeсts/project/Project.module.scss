@@ -40,6 +40,10 @@
     .projectDescription {
       @include text($textFontFamily, 12px, 1.8, 400);
     }
+
+    .technologies {
+      @include text($textFontFamily, 12px, 1.8, 500);
+    }
   }
 }
 

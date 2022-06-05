@@ -12,7 +12,7 @@ export const Hire = () => {
                 <Title name={'I Am Considering Options For Remote Work'}/>
                 <Fade bottom>
                     <div className={s.hireBtn}>
-                        <Button name={'Employ'}/>
+                        <Button name={'Employ'} link={''}/>
                     </div>
                 </Fade>
             </div>

@@ -81,7 +81,7 @@ export const Contacts = () => {
                             <div className={s.errorsContacts}>{formik.errors.contacts}</div> : null}
                         <textarea className={s.formGroupTextarea}
                                   rows={7}
-                                  placeholder={'Describe yourself here...'}
+                                  placeholder={'Your message...'}
                                   {...formik.getFieldProps('message')}
                         >
                         </textarea>
