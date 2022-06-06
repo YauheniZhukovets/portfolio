@@ -7,14 +7,16 @@ type ProjectPropsType = {
     description: string
     style: { backgroundImage: string }
     technologies: string
-    link: string
+    linkCode: string
+    linkDemo: string
 }
 
-export const Project = ({link, name, style, description, technologies}: ProjectPropsType) => {
+export const Project = ({linkCode, name, style, description, technologies, linkDemo}: ProjectPropsType) => {
     return (
         <div className={s.project}>
             <div className={s.image} style={style}>
-                <Button name={'View'} link={link}/>
+                <Button name={'View code'} link={linkCode}/>
+                <Button name={'View demo'} link={linkDemo}/>
             </div>
             <div className={s.projectInfo}>
                 <div className={s.projectTitle}>{name}</div>

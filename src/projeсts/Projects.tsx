@@ -13,7 +13,8 @@ const Fade = require('react-reveal/Fade')
 type ProjectsArrayType = {
     style: { backgroundImage: string }
     name: string
-    link: string
+    linkCode: string
+    linkDemo: string
     description: string
     technologies: string
 }
@@ -29,7 +30,8 @@ export const Projects = () => {
         {
             style: todolist,
             name: 'ToDoList',
-            link: 'https://github.com/YauheniZhukovets/react-todolist',
+            linkCode: 'https://github.com/YauheniZhukovets/react-todolist',
+            linkDemo: 'https://YauheniZhukovets.github.io/react-todolist',
             description: 'SPA for managing to-do lists and their items. Implemented: add todolist / task, ' +
                 'remove todolist / task, rename todolist / task, marking the completed task, ' +
                 'displaying all / active / confirmed tasks in todolist.',
@@ -38,7 +40,8 @@ export const Projects = () => {
         {
             style: socialNetwork,
             name: 'Social network',
-            link: 'https://github.com/YauheniZhukovets/react-samurai',
+            linkDemo: 'https://YauheniZhukovets.github.io/react-samurai',
+            linkCode: 'https://github.com/YauheniZhukovets/react-samurai',
             description: 'SPA for social actions - messaging and blogging. Implemented: login page with validation, ' +
                 'error displaying and captcha; 404 page; profile page with abilities to: view the information of the ' +
                 'selected user, edit your profile information, change avatar, users page and friends page with ' +
@@ -49,7 +52,8 @@ export const Projects = () => {
         {
             style: playingCards,
             name: 'Playing cards',
-            link: 'https://github.com/YauheniZhukovets/Learn-cards',
+            linkCode: 'https://github.com/YauheniZhukovets/Learn-cards',
+            linkDemo: 'https://YauheniZhukovets.github.io/Learn-cards',
             description: 'SPA for learning by cards. Implemented: login page with validation; ' +
                 'register page with validation; 404 page; profile page with abilities to: edit your profile information' +
                 ' (change avatar and nickname), add a new card pack and edit, search, sort, view, remove and learn ' +
@@ -60,7 +64,8 @@ export const Projects = () => {
         {
             style: counter,
             name: 'Counter',
-            link: 'https://github.com/YauheniZhukovets/exam-Counter',
+            linkCode: 'https://github.com/YauheniZhukovets/exam-Counter',
+            linkDemo: 'https://YauheniZhukovets.github.io/exam-Counter',
             description: 'SPA. Counter with different settings. With display of information messages. With data ' +
                 'storage in the "local storage"',
             technologies: 'Technologies: JavaScript, TypeScript, React, Redux'
@@ -68,7 +73,8 @@ export const Projects = () => {
         {
             style: reactTasks,
             name: 'React tasks',
-            link: 'https://github.com/YauheniZhukovets/ignat-homeworks',
+            linkCode: 'https://github.com/YauheniZhukovets/ignat-homeworks',
+            linkDemo: 'https://YauheniZhukovets.github.io/ignat-homeworks',
             description: 'SPA. A lot of different tasks during training. Implemented:  404 page, page navigation',
             technologies: 'Technologies: JavaScript, TypeScript, React, Redux, Axios'
         },
@@ -85,7 +91,8 @@ export const Projects = () => {
                                 <Project key={index}
                                          style={project.style}
                                          name={project.name}
-                                         link={project.link}
+                                         linkCode={project.linkCode}
+                                         linkDemo={project.linkDemo}
                                          description={project.description}
                                          technologies={project.technologies}
                                 />

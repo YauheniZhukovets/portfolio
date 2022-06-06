@@ -8,6 +8,9 @@ type ButtonPropsType = {
 
 export const Button = ({link, name}: ButtonPropsType) => {
     return (
-        <a href={link} target={'_blank'} rel="noreferrer" className={s.btn}>{name}</a>
+        <div>
+            <a href={link} target={'_blank'} rel="noreferrer" className={s.btn}>{name}</a>
+        </div>
+
     );
 }
