@@ -74,7 +74,7 @@ export const Contacts = () => {
 
                         <input className={s.formGroupInput}
                                type="text"
-                               placeholder={'Contacts(e-mail or phone)'}
+                               placeholder={'Contacts(e-mail)'}
                                {...formik.getFieldProps('contacts')}
                         />
                         {formik.touched.contacts ?
