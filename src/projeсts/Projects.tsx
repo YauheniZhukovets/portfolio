@@ -47,7 +47,7 @@ export const Projects = () => {
                 'selected user, edit your profile information, change avatar, users page and friends page with ' +
                 'abilities to: view the list of users using pagination, subscribe and unsubscribe to any user, ' +
                 'view any user profile.',
-            technologies: 'Technologies: JavaScript, TypeScript, React, Redux, Axios, ReduxForm'
+            technologies: 'Technologies: JavaScript, TypeScript, React, Redux, Axios, SCSS ,ReduxForm'
         },
         {
             style: playingCards,
