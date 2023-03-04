@@ -7,6 +7,7 @@ import socialImage from '../assets/image/socialNetwork.jpg'
 import playingCardsImage from '../assets/image/PlayingCards.jpg'
 import tasksImage from '../assets/image/tasks.png'
 import counterImage from '../assets/image/counter.jpeg'
+import collectionImage from '../assets/image/collection.jpg'
 
 const Fade = require('react-reveal/Fade')
 
@@ -17,9 +18,11 @@ type ProjectsArrayType = {
     linkDemo: string
     description: string
     technologies: string
+    linkCodeBack?: string
 }
 
 export const Projects = () => {
+    const personalCollection = {backgroundImage: `url(${collectionImage})`}
     const socialNetwork = {backgroundImage: `url(${socialImage})`}
     const todolist = {backgroundImage: `url(${todolistImage})`}
     const playingCards = {backgroundImage: `url(${playingCardsImage})`}
@@ -27,6 +30,15 @@ export const Projects = () => {
     const counter = {backgroundImage: `url(${counterImage})`}
 
     const projectsArray: Array<ProjectsArrayType> = [
+        {
+            style: personalCollection,
+            name: 'MyPersonalCollection',
+            linkCode: 'https://github.com/YauheniZhukovets/personal-collection-client',
+            linkCodeBack: 'https://github.com/YauheniZhukovets/personal-collection-server',
+            linkDemo: 'https://personal-collection-client.vercel.app/',
+            description: 'App created with MERN stack. The application has the ability to login/ register/logout. Authorized users can create collection from existing categories, add items. He can also like and write comments for items of other users. Full-text search and search by tags work on any page.',
+            technologies: 'Technologies: JavaScript, TypeScript, React, Redux, Antd, Axios, Node JS, Express, MongoDB'
+        },
         {
             style: todolist,
             name: 'ToDoList',
@@ -93,6 +105,7 @@ export const Projects = () => {
                                          name={project.name}
                                          linkCode={project.linkCode}
                                          linkDemo={project.linkDemo}
+                                         linkCodeBack={project.linkCodeBack}
                                          description={project.description}
                                          technologies={project.technologies}
                                 />
