@@ -26,7 +26,7 @@ export const Project = ({
             <div className={s.image} style={style}>
                 <Button name={'View code'} link={linkCode}/>
                 {
-                    linkCodeBack && <Button name={'View back-end'} link={linkCodeBack}/>
+                    linkCodeBack && <Button name={'View code back-end'} link={linkCodeBack}/>
                 }
                 <Button name={'View demo'} link={linkDemo}/>
             </div>
