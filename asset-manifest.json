@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03da5ae6.css",
-    "main.js": "/portfolio/static/js/main.73fc6fcc.js",
+    "main.css": "/portfolio/static/css/main.20985106.css",
+    "main.js": "/portfolio/static/js/main.c39a5c4c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.39022f8f276a25892a5a.jpg",
     "static/media/socialNetwork.jpg": "/portfolio/static/media/socialNetwork.4daf99e049ef46e4ab88.jpg",
     "static/media/bgImage.jpg": "/portfolio/static/media/bgImage.ffdac97f3fe1cb951217.jpg",
     "static/media/counter.jpeg": "/portfolio/static/media/counter.ab3b60d82de65d0298c7.jpeg",
+    "static/media/collection.jpg": "/portfolio/static/media/collection.f9312bc0c8fa218ed44e.jpg",
     "static/media/PlayingCards.jpg": "/portfolio/static/media/PlayingCards.124de96c8f420d693586.jpg",
     "static/media/tasks.png": "/portfolio/static/media/tasks.33ab6dde38300ec4a76c.png",
     "static/media/todoList.jpg": "/portfolio/static/media/todoList.51ac188d00abf846ca18.jpg",
@@ -14,12 +15,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/closeMenu.svg": "/portfolio/static/media/closeMenu.f1ef6e7ef03c9a74760c0ba26f3ede4d.svg",
     "static/media/menu.svg": "/portfolio/static/media/menu.5cc298bdc5569baa23804e2131076e6f.svg",
-    "main.03da5ae6.css.map": "/portfolio/static/css/main.03da5ae6.css.map",
-    "main.73fc6fcc.js.map": "/portfolio/static/js/main.73fc6fcc.js.map",
+    "main.20985106.css.map": "/portfolio/static/css/main.20985106.css.map",
+    "main.c39a5c4c.js.map": "/portfolio/static/js/main.c39a5c4c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03da5ae6.css",
-    "static/js/main.73fc6fcc.js"
+    "static/css/main.20985106.css",
+    "static/js/main.c39a5c4c.js"
   ]
 }
