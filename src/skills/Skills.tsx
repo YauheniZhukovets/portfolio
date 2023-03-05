@@ -19,22 +19,22 @@ export const Skills = () => {
         {
             title: 'Development',
             icon: faReact,
-            description: 'React, Redux, AXIOS etc'
+            description: 'React, NodeJS, MongoDB  etc'
         },
         {
             title: 'Foundation',
             icon: faJs,
-            description: 'JavaScript, TypeScript, HTML5, CSS3'
+            description: 'TypeScript, JavaScript, HTML5, CSS3'
         },
         {
             title: 'Testing',
             icon: faTumblr,
-            description: 'Unit Tests, SnapShot, Storybook'
+            description: 'Unit Tests, Postman ,SnapShot, Storybook'
         },
         {
             title: 'Design',
             icon: faSass,
-            description: 'Material UI, Ant Design etc'
+            description: 'Ant Design, Material UI, SCSS etc'
         },
     ]
 
