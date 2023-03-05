@@ -5,8 +5,6 @@ import {Title} from '../common/components/title/Title';
 import todolistImage from '../assets/image/todoList.jpg'
 import socialImage from '../assets/image/socialNetwork.jpg'
 import playingCardsImage from '../assets/image/PlayingCards.jpg'
-import tasksImage from '../assets/image/tasks.png'
-import counterImage from '../assets/image/counter.jpeg'
 import collectionImage from '../assets/image/collection.jpg'
 
 const Fade = require('react-reveal/Fade')
@@ -26,8 +24,6 @@ export const Projects = () => {
     const socialNetwork = {backgroundImage: `url(${socialImage})`}
     const todolist = {backgroundImage: `url(${todolistImage})`}
     const playingCards = {backgroundImage: `url(${playingCardsImage})`}
-    const reactTasks = {backgroundImage: `url(${tasksImage})`}
-    const counter = {backgroundImage: `url(${counterImage})`}
 
     const projectsArray: Array<ProjectsArrayType> = [
         {
@@ -72,23 +68,6 @@ export const Projects = () => {
                 'your card packs; packs list page with abilities to: search, sort, view and learn any card packs; ' +
                 'learn page with abilities to answer a question and evaluate your answer.',
             technologies: 'Technologies: JavaScript, TypeScript, React, Redux, Redux-thunk, Axios, Formik'
-        },
-        {
-            style: counter,
-            name: 'Counter',
-            linkCode: 'https://github.com/YauheniZhukovets/exam-Counter',
-            linkDemo: 'https://YauheniZhukovets.github.io/exam-Counter',
-            description: 'SPA. Counter with different settings. With display of information messages. With data ' +
-                'storage in the "local storage"',
-            technologies: 'Technologies: JavaScript, TypeScript, React, Redux'
-        },
-        {
-            style: reactTasks,
-            name: 'React tasks',
-            linkCode: 'https://github.com/YauheniZhukovets/ignat-homeworks',
-            linkDemo: 'https://YauheniZhukovets.github.io/ignat-homeworks',
-            description: 'SPA. A lot of different tasks during training. Implemented:  404 page, page navigation',
-            technologies: 'Technologies: JavaScript, TypeScript, React, Redux, Axios'
         },
     ]
 
